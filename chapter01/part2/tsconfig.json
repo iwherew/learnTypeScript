@@ -1,0 +1,52 @@
+{
+  // include 指定哪些ts文件需要被编译
+  // ** 表示任意目录
+  // * 表示任意文件
+  "include": [
+    "./src/**/*"
+  ],
+  // exclude 不被编译的文件目录
+  // 默认值： ["node_modules","bower_components","jspm_packages"]
+  "exclude": [
+    "./src/hello/**/*"
+  ],
+  // 继承配置文件
+//  "extends": "",
+  // 指定编译文件的列表，文件少的时候才会用到
+//  "files": [],
+  // 编译器的选项
+  "compilerOptions": {
+    // 被编译的ES的版本，默认ES3
+    "target": "ES6",
+    // 模块化的解决方案
+    "module": "CommonJS",
+    // 项目中要使用的库，一般设置
+//    "lib": [],
+    // 指定编译后文件所在的目录
+    "outDir": "./dist",
+    // 将代码合并为一个文件
+    // 设置outFile后，所有的全局作用域中的代码会合并到同一个文件中
+    // 如果用了模块化，模块化实现必须使用 amd 或 system，否则合并不上
+//    "outFile": "./dist/app.js",
+    // 是否对js文件进行编译，默认false
+    "allowJs": true,
+    // 是否检查js代码是否符合语法规范，默认false
+    "checkJs": true,
+    // 是否移除注释，默认false
+    "removeComments": true,
+    // 不生成编译后的文件，默认false
+    "noEmit": false,
+    // 当有错误时，不生成编译后的文件，默认false
+    "noEmitOnError": true,
+    // 所有严格检查的总开关
+    "strict": true,
+    // 这是编译后的文件是否使用严格模式，默认false
+    "alwaysStrict": true,
+    // 不允许隐式any类型，默认false
+    "noImplicitAny": true,
+    // 不允许不明确类型的this，默认false
+    "noImplicitThis": true,
+    // 严格的检查空值，默认false
+    "strictNullChecks": true,
+  }
+}
